@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Management App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/frontend/styles.css" />
+  </head>
+  <body>
+    <header class="dashboard-bar">
+      <h1>🎓 Student Management App</h1>
+      <p>Register & Manage Students</p>
+    </header>
+
+    <div class="container">
+      <!-- LEFT: FORM -->
+      <section class="left-panel">
+        <h2>Student Registration</h2>
+
+        <form id="studentForm">
+          <input type="text" id="name" placeholder="Enter Name" required />
+          <input type="email" id="email" placeholder="Enter Email" required />
+          <input type="text" id="course" placeholder="Enter Course" required />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- RIGHT: TABLE -->
+      <section class="right-panel">
+        <h2>Registered Students</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Course</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="studentTable"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="/frontend/script.js"></script>
+  </body>
+</html>
