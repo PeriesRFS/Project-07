@@ -2,4 +2,3 @@ fastapi
 uvicorn
 pydantic[email]  # For email validation
 typing
-threading
